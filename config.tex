@@ -27,13 +27,32 @@
 % Correct superscripts 
 \usepackage{fnpct}
 
+% Paper layout
+\usepackage{geometry}
+% DHBW Standard
+\geometry{a4paper, top=25mm, left=30mm, right=30mm, bottom=20mm, headsep=10mm, footskip=12mm}
 
+% Linespacing
+\usepackage{setspace}
+\onehalfspacing
 
+% Picture captions
+\usepackage[labelfont=bf]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false,format=hang}
+
+% Quotes smaller fontsize
+\expandafter\def\expandafter\quote\expandafter{\quote\small}
+
+% Text between enumerated lists
+\usepackage{enumitem}
+
+% Vertical figures
+\usepackage{booktabs}
+\usepackage{multirow}
 
 %		CALCULATIONS
 %
 \usepackage{calc} % Used for extra space below footsepline
-
 
 
 %		BIBLIOGRAPHY SETTINGS
@@ -45,7 +64,7 @@
 \AdaptNoteOpt\autocite\multautocite % will add  separators if autocite is called multiple consecutive times
 
 % Uncomment the next line for IEEE-style 
-% \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
+% \usepackage[backend=biber, style=ieee, sorting=nyt, isbn=false, doi=false, urldate=short, dashed=false]{biblatex} 	% Use IEEE-Style (e.g. [1])
 
 % Uncomment the next line for alphabetic style 
 % \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
